@@ -1,0 +1,10 @@
+﻿类别,提取名字,图片路径,信息提取 2,问题,答案
+Animals,elephant,,A big gray elephant with large ears and long tusks is walking on the grass. There are some small white birds near its feet.,"1. What can you see in the picture?
+2. What color is the elephant?
+3. How many legs does the elephant have?
+4. What is the elephant doing?
+5. Where does the elephant live, in the forest or in the water?
+6. What does the elephant eat, grass or fish?
+7. What is near the elephant's feet?","1. I can see an elephant in the picture.
+2. The elephant is gray.
+3. The elephant has four legs.

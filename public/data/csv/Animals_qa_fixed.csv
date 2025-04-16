@@ -1,0 +1,391 @@
+﻿Category,ThemeWord,ImagePath,Description,Question,Answer
+Animals,elephant,,A big gray elephant with large ears and long tusks is walking on the grass. There are some small white birds near its feet.,"1. What can you see in the picture?
+2. What color is the elephant?
+3. How many legs does the elephant have?
+4. What is the elephant doing?
+5. Where does the elephant live, in the forest or in the water?
+6. What does the elephant eat, grass or fish?
+7. What is near the elephant's feet?","1. I can see an elephant in the picture.
+2. The elephant is gray.
+3. The elephant has four legs.
+4. The elephant is walking on the grass.
+5. The elephant lives in the forest.
+6. The elephant eats grass.
+7. Some small white birds are near the elephant's feet."
+Animals,goat,,A white goat with long horns is standing on the grass. It has four legs and is looking to the side.,"1. What can you see in the picture?
+2. What color is the goat?
+3. How many legs does the goat have?
+4. What is the goat doing?
+5. Where does the goat live?
+6. What does the goat eat, grass or bread?
+7. Does the goat have long horns?","1. I can see a goat in the picture.
+2. The goat is white.
+3. The goat has four legs.
+4. The goat is standing on the grass.
+5. The goat lives on a farm.
+6. The goat eats grass.
+7. Yes, the goat has long horns."
+Animals,alligator,,An alligator with many teeth is resting. It is black and gray. Two orange butterflies are sitting on its head.,"1. What can you see in the picture?
+2. What color is the alligator?
+3. How many legs does the alligator have?
+4. What is the alligator doing?
+5. Where does the alligator live, in the water or on the land?
+6. What does the alligator eat, fish or grass?
+7. How many butterflies are on the alligator's head?","1. I can see an alligator in the picture.
+2. The alligator is black and gray.
+3. The alligator has four legs.
+4. The alligator is resting.
+5. The alligator lives in the water.
+6. The alligator eats fish.
+7. There are two butterflies on the alligator's head."
+Animals,bear,,A big brown bear is standing in the snow. It has four legs and a big body.,"1. What can you see in the picture?
+2. What color is the bear?
+3. How many legs does the bear have?
+4. What is the bear doing?
+5. Where does the bear live, in the snow or in the desert?
+6. What does the bear eat, fish or bread?
+7. How does the bear move?","1. I can see a bear in the picture.
+2. The bear is brown.
+3. The bear has four legs.
+4. The bear is standing.
+5. The bear lives in the snow.
+6. The bear eats fish.
+7. The bear walks and runs."
+Animals,horse,,Two gray horses with four legs and strong bodies are running on the ground. They are making dust fly up around them.,"1. What can you see in the picture?
+2. What color is the horse?
+3. How many legs does the horse have?
+4. What is the horse doing?
+5. Where does the horse live, on a farm or in the forest?
+6. What does the horse eat, grass or bread?
+7. How does the horse move?","1. I can see a horse in the picture.
+2. The horse is gray.
+3. The horse has four legs.
+4. The horse is running.
+5. The horse lives on a farm.
+6. The horse eats grass.
+7. The horse runs and walks."
+Animals,camel,,A brown camel with two humps is standing. It has four legs.,"1. What can you see in the picture?
+2. What color is the camel?
+3. How many legs does the camel have?
+4. What does the camel have on its back?
+5. Where does the camel live, in the desert or in the forest?
+6. What does the camel eat, grass or bread?
+7. What can the camel do?","1. I can see a camel in the picture.
+2. The camel is brown.
+3. The camel has four legs.
+4. The camel has two humps.
+5. The camel lives in the desert.
+6. The camel eats grass.
+7. The camel can walk in the sand."
+Animals,crab,,This is a gray crab. It has eight legs and two big claws. The crab is standing on a white surface.,"1. What can you see in the picture?
+2. What color is the crab?
+3. How many legs does the crab have?
+4. What does the crab have on its body?
+5. Where is the crab standing?
+6. What does the crab eat, fish or grass?
+7. Where does the crab live, in the water or on the land?","1. I can see a crab in the picture.
+2. The crab is gray.
+3. The crab has eight legs.
+4. The crab has two big claws.
+5. The crab is standing on a white surface.
+6. The crab eats fish.
+7. The crab lives in the water."
+Animals,cow,,A big black and white cow is feeding a small black and white cow in the green grass.,"1. What can you see in the picture?
+2. What color is the cow?
+3. How many legs does the cow have?
+4. What is the cow doing?
+5. Where does the cow live, on a farm or in the forest?
+6. What does the cow eat, grass or bread?
+7. How does the cow move?","1. I can see a cow in the picture.
+2. The cow is black and white.
+3. The cow has four legs.
+4. The cow is feeding the baby cow.
+5. The cow lives on a farm.
+6. The cow eats grass.
+7. The cow walks and eats."
+Animals,duck,,A brown and white duck is standing on the grass. It has two legs and a big body.,"1. What can you see in the picture?
+2. What color is the duck?
+3. How many legs does the duck have?
+4. What is the duck doing?
+5. Where does the duck live, in the water or in the forest?
+6. What does the duck eat, bread or fish?
+7. How does the duck move?","1. I can see a duck in the picture.
+2. The duck is brown and white.
+3. The duck has two legs.
+4. The duck is standing on the grass.
+5. The duck lives in the water.
+6. The duck eats bread.
+7. The duck walks and swims."
+Animals,eagle,,An eagle with large wings is flying over the water and catching a fish. It has a yellow beak and legs. The eagle is brown and white.,"1. What can you see in the picture?
+2. What color is the eagle?
+3. How many legs does the eagle have?
+4. What is the eagle doing?
+5. Where is the eagle flying, over the water or over the trees?
+6. What does the eagle eat, fish or bread?
+7. What color is the eagle's beak?","1. I can see an eagle in the picture.
+2. The eagle is brown and white.
+3. The eagle has two legs.
+4. The eagle is flying and catching a fish.
+5. The eagle is flying over the water.
+6. The eagle eats fish.
+7. The eagle's beak is yellow."
+Animals,fish,,"Three colorful fish are swimming in the water. They have flat, round shapes with two fins and one tail. The fish are orange, blue, and white with red and blue patterns.","1. What can you see in the picture?
+2. What color are the fish?
+3. How many fish are there?
+4. What are the fish doing?
+5. Where do the fish live, in the water or on the land?
+6. What do the fish eat, bread or worms?
+7. How many legs do the fish have?","1. I can see fish in the picture.
+2. The fish are orange, blue, and white.
+3. There are three fish.
+4. The fish are swimming.
+5. The fish live in the water.
+6. The fish eat worms.
+7. The fish have no legs."
+Animals,frog,,A green frog with big eyes and four legs is sitting on a leaf.,"1. What can you see in the picture?
+2. What color is the frog?
+3. How many legs does the frog have?
+4. What is the frog doing?
+5. Where does the frog live, in the water or in the tree?
+6. What does the frog eat, flies or bread?
+7. Can the frog jump?","1. I can see a frog in the picture.
+2. The frog is green.
+3. The frog has four legs.
+4. The frog is sitting on a leaf.
+5. The frog lives in the water.
+6. The frog eats flies.
+7. Yes, the frog can jump."
+Animals,giraffe,,Some giraffes are standing together. They have long necks and big eyes. They are brown and white.,"1. What can you see in the picture?
+2. What color is the giraffe?
+3. How many legs does the giraffe have?
+4. What is the giraffe doing?
+5. Where does the giraffe live, in the forest or in the zoo?
+6. What does the giraffe eat, leaves or fish?
+7. How does the giraffe move?","1. I can see a giraffe in the picture.
+2. The giraffe is brown and white.
+3. The giraffe has four legs.
+4. The giraffe is standing.
+5. The giraffe lives in the forest.
+6. The giraffe eats leaves.
+7. The giraffe walks and runs."
+Animals,gorilla,,A big black gorilla with a brownish head is sitting among green plants. It has four legs and looks strong.,"1. What can you see in the picture?
+2. What color is the gorilla?
+3. How many legs does the gorilla have?
+4. What is the gorilla doing?
+5. Where does the gorilla live, in the forest or in the water?
+6. What does the gorilla eat, leaves or fish?
+7. Is the gorilla big or small?","1. I can see a gorilla in the picture.
+2. The gorilla is black.
+3. The gorilla has four legs.
+4. The gorilla is sitting.
+5. The gorilla lives in the forest.
+6. The gorilla eats leaves.
+7. The gorilla is big."
+Animals,hippo,,A big gray hippo is sitting in the water with its mouth open. It has four legs and a big body.,"1. What can you see in the picture?
+2. What color is the hippo?
+3. How many legs does the hippo have?
+4. What is the hippo doing?
+5. Where does the hippo live, in the water or on the land?
+6. What does the hippo eat, grass or fish?
+7. Is the hippo big or small?","1. I can see a hippo in the picture.
+2. The hippo is gray.
+3. The hippo has four legs.
+4. The hippo is sitting in the water.
+5. The hippo lives in the water.
+6. The hippo eats grass.
+7. The hippo is big."
+Animals,jellyfish,,"Two brown and white jellyfish are floating in the water. They have long, curly tentacles and a round, bell-shaped body.","1. What can you see in the picture?
+2. What color are the jellyfish?
+3. How many jellyfish are there?
+4. What do the jellyfish have?
+5. Where do the jellyfish live, in the water or on the land?
+6. What do jellyfish eat, fish or plants?
+7. How do jellyfish move?","1. I can see jellyfish in the picture.
+2. The jellyfish are brown and white.
+3. There are two jellyfish.
+4. The jellyfish have long, curly tentacles.
+5. The jellyfish live in the water.
+6. Jellyfish eat fish.
+7. Jellyfish float and swim."
+Animals,kitten,,A small brown and black kitten with four legs is walking on the grass.,"1. What can you see in the picture?
+2. What color is the kitten?
+3. How many legs does the kitten have?
+4. What is the kitten doing?
+5. Where is the kitten, on the grass or in the water?
+6. What does the kitten eat, milk or bread?
+7. How does the kitten move?","1. I can see a kitten in the picture.
+2. The kitten is brown and black.
+3. The kitten has four legs.
+4. The kitten is walking.
+5. The kitten is on the grass.
+6. The kitten eats milk.
+7. The kitten walks and runs."
+Animals,lizard,,"A colorful lizard with green, yellow, blue, and white spots stands on some rocks. It has four legs and a long tail.","1. What can you see in the picture?
+2. What color is the lizard?
+3. How many legs does the lizard have?
+4. What is the lizard doing?
+5. Where does the lizard live, in the forest or in the water?
+6. What does the lizard eat, insects or leaves?
+7. How does the lizard move?","1. I can see a lizard in the picture.
+2. The lizard is green, yellow, blue, and white.
+3. The lizard has four legs.
+4. The lizard is standing on the rocks.
+5. The lizard lives in the forest.
+6. The lizard eats insects.
+7. The lizard walks and runs."
+Animals,mouse,,A brown mouse with a round body and four legs is eating seeds.,"1. What can you see in the picture?
+2. What color is the mouse?
+3. How many legs does the mouse have?
+4. What is the mouse doing?
+5. Where does the mouse live, in a house or in a forest?
+6. What does the mouse eat, seeds or meat?
+7. Is the mouse big or small?","1. I can see a mouse in the picture.
+2. The mouse is brown.
+3. The mouse has four legs.
+4. The mouse is eating seeds.
+5. The mouse lives in a house.
+6. The mouse eats seeds.
+7. The mouse is small."
+Animals,octopus,,An octopus is swimming in the water. It has eight long legs with many white suckers. The octopus is red and white.,"1. What can you see in the picture?
+2. What color is the octopus?
+3. How many legs does the octopus have?
+4. What is the octopus doing?
+5. Where does the octopus live, in the water or on the land?
+6. What does the octopus eat, fish or grass?
+7. How does the octopus move?","1. I can see an octopus in the picture.
+2. The octopus is red and white.
+3. The octopus has eight legs.
+4. The octopus is swimming.
+5. The octopus lives in the water.
+6. The octopus eats fish.
+7. The octopus swims and walks with its legs."
+Animals,parrot,,A blue and yellow parrot is sitting on a branch. It has a big beak and two legs.,"1. What can you see in the picture?
+2. What color is the parrot?
+3. How many legs does the parrot have?
+4. What is the parrot doing?
+5. Where does the parrot live, in a tree or in the water?
+6. What does the parrot eat, seeds or fish?
+7. What does the parrot have on its face?","1. I can see a parrot in the picture.
+2. The parrot is blue and yellow.
+3. The parrot has two legs.
+4. The parrot is sitting on a branch.
+5. The parrot lives in a tree.
+6. The parrot eats seeds.
+7. The parrot has a big beak."
+Animals,polar bear,,A white polar bear with four legs and a big body is walking on the snow.,"1. What can you see in the picture?
+2. What color is the polar bear?
+3. How many legs does the polar bear have?
+4. What is the polar bear doing?
+5. Where does the polar bear live, in the snow or in the forest?
+6. What does the polar bear eat, fish or bread?
+7. How does the polar bear move?","1. I can see a polar bear in the picture.
+2. The polar bear is white.
+3. The polar bear has four legs.
+4. The polar bear is walking.
+5. The polar bear lives in the snow.
+6. The polar bear eats fish.
+7. The polar bear walks and swims."
+Animals,puppy,,This is a light brown puppy. It has four legs and a small size. The puppy is standing on a wooden floor and looking at the camera.,"1. What can you see in the picture?
+2. What color is the puppy?
+3. How many legs does the puppy have?
+4. What is the puppy doing?
+5. Where is the puppy standing, on a wooden floor or on the grass?
+6. What does the puppy eat, meat or bread?
+7. How does the puppy move?","1. I can see a puppy in the picture.
+2. The puppy is light brown.
+3. The puppy has four legs.
+4. The puppy is standing and looking.
+5. The puppy is standing on a wooden floor.
+6. The puppy eats meat.
+7. The puppy runs and walks."
+Animals,rooster,,"A red rooster with orange, black, and green feathers stands on the ground. It has two legs and a big red comb.","1. What can you see in the picture?
+2. What color is the rooster?
+3. How many legs does the rooster have?
+4. What is the rooster doing?
+5. Where does the rooster live, on a farm or in the forest?
+6. What does the rooster eat, seeds or fish?
+7. What is on the rooster's head?","1. I can see a rooster in the picture.
+2. The rooster is red, orange, black, and green.
+3. The rooster has two legs.
+4. The rooster is standing on the ground.
+5. The rooster lives on a farm.
+6. The rooster eats seeds.
+7. The rooster has a big red comb on its head."
+Animals,sheep,,Some white sheep with fluffy wool are standing in a field. They have four legs each.,"1. What can you see in the picture?
+2. What color are the sheep?
+3. How many legs does a sheep have?
+4. What is the sheep doing?
+5. Where does the sheep live, on a farm or in the city?
+6. What does the sheep eat, grass or fish?
+7. How does the sheep move?","1. I can see sheep in the picture.
+2. The sheep are white.
+3. A sheep has four legs.
+4. The sheep is standing.
+5. The sheep lives on a farm.
+6. The sheep eats grass.
+7. The sheep walks and runs."
+Animals,sloth,,A brown sloth with four legs and big eyes is eating a green leaf.,"1. What can you see in the picture?
+2. What color is the sloth?
+3. How many legs does the sloth have?
+4. What is the sloth doing?
+5. Where does the sloth live, in the forest or in the water?
+6. What does the sloth eat, leaves or fish?
+7. How does the sloth move?","1. I can see a sloth in the picture.
+2. The sloth is brown.
+3. The sloth has four legs.
+4. The sloth is eating a leaf.
+5. The sloth lives in the forest.
+6. The sloth eats leaves.
+7. The sloth climbs and walks."
+Animals,snake,,This is a snake. It is brown and black. The snake has no legs and a long body. It is resting on the grass.,"1. What can you see in the picture?
+2. What color is the snake?
+3. How many legs does the snake have?
+4. What is the snake doing?
+5. Where is the snake, on the grass or in the water?
+6. What does the snake eat, mice or leaves?
+7. How does the snake move?","1. I can see a snake in the picture.
+2. The snake is brown and black.
+3. The snake has no legs.
+4. The snake is resting.
+5. The snake is on the grass.
+6. The snake eats mice.
+7. The snake slithers."
+Animals,squirrel,,"A brown and white squirrel with four legs and a bushy tail is sitting on a branch, holding a nut.","1. What can you see in the picture?
+2. What color is the squirrel?
+3. How many legs does the squirrel have?
+4. What is the squirrel doing?
+5. Where does the squirrel live, in a tree or in the water?
+6. What does the squirrel eat, nuts or fish?
+7. What does the squirrel have on its body?","1. I can see a squirrel in the picture.
+2. The squirrel is brown and white.
+3. The squirrel has four legs.
+4. The squirrel is holding a nut.
+5. The squirrel lives in a tree.
+6. The squirrel eats nuts.
+7. The squirrel has a bushy tail."
+Animals,tiger,,A big tiger with orange and white fur and four legs is resting in the snow. It has big eyes and is looking at something.,"1. What can you see in the picture?
+2. What color is the tiger?
+3. How many legs does the tiger have?
+4. What is the tiger doing?
+5. Where is the tiger, in the snow or in the water?
+6. What does the tiger eat, meat or grass?
+7. How does the tiger move?","1. I can see a tiger in the picture.
+2. The tiger is orange and white.
+3. The tiger has four legs.
+4. The tiger is resting.
+5. The tiger is in the snow.
+6. The tiger eats meat.
+7. The tiger runs and walks."
+Animals,wolf,,"Three gray and white wolves are standing together. They have four legs, pointy ears, and bushy tails. They are looking at something in the forest.","1. What can you see in the picture?
+2. What color are the wolves?
+3. How many legs does a wolf have?
+4. What are the wolves doing?
+5. Where do the wolves live, in the forest or in the city?
+6. What do wolves eat, meat or grass?
+7. How does a wolf move?","1. I can see wolves in the picture.
+2. The wolves are gray and white.
+3. A wolf has four legs.
+4. The wolves are looking at something.
+5. The wolves live in the forest.
+6. Wolves eat meat.
+7. A wolf runs and walks."

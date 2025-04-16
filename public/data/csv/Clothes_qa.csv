@@ -1,0 +1,311 @@
+类别,提取名字,图片路径,信息提取 2,问题,答案
+Clothes,vest,,This is an orange vest with padding to keep you warm in winter. It has a zipper to open and close easily.,"1. What can you see in the picture?
+2. What color is the vest?
+3. When do people wear the vest?
+4. What part of the body does the vest cover?
+5. What does the vest have to open and close?
+6. Is the vest for summer or winter?
+7. Does the vest keep you warm or cool?","1. I can see a vest in the picture.
+2. The vest is orange.
+3. People wear the vest in winter.
+4. The vest covers the body.
+5. The vest has a zipper.
+6. The vest is for winter.
+7. The vest keeps you warm."
+Clothes,watch,,This is a blue and yellow watch with a round face and a blue strap.,"1. What can you see in the picture?
+2. What color is the watch?
+3. Is the watch round or square?
+4. What part of the body do you wear the watch on?
+5. When do people wear a watch, in the day or at night?
+6. What color is the strap of the watch, blue or red?
+7. Is the watch big or small?","1. I can see a watch in the picture.
+2. The watch is blue and yellow.
+3. The watch is round.
+4. You wear the watch on your wrist.
+5. People wear a watch in the day.
+6. The strap of the watch is blue.
+7. The watch is small."
+Clothes,belt,,This is a gray belt with a metal buckle. It has a rectangular shape and can be worn in any season.,"1. What can you see in the picture?
+2. What color is the belt?
+3. What shape is the belt?
+4. When do people wear the belt, in summer or winter?
+5. What part of the body does the belt cover?
+6. What is on the belt, a buckle or a button?
+7. Is the belt for clothes or for shoes?","1. I can see a belt in the picture.
+2. The belt is gray.
+3. The belt is rectangular.
+4. People wear the belt in any season.
+5. The belt covers the waist.
+6. There is a buckle on the belt.
+7. The belt is for clothes."
+Clothes,boots,,These brown boots are made of leather and have a stitched pattern. They are good for fall and winter.,"1. What can you see in the picture?
+2. What color are the boots?
+3. When do people wear boots, in summer or winter?
+4. What part of the body do boots cover?
+5. Are boots made of leather or paper?
+6. Do boots have a stitched pattern?
+7. Are boots good for fall and winter?","1. I can see boots in the picture.
+2. The boots are brown.
+3. People wear boots in winter.
+4. Boots cover the feet.
+5. Boots are made of leather.
+6. Yes, boots have a stitched pattern.
+7. Yes, boots are good for fall and winter."
+Clothes,cap,,"This maroon cap has a solid color and is adjustable, making it comfortable to wear in any season.","1. What can you see in the picture?
+2. What color is the cap?
+3. When do people wear a cap, in summer or winter?
+4. What part of the body does the cap cover?
+5. Is the cap adjustable, yes or no?
+6. Is the cap comfortable to wear, yes or no?","1. I can see a cap in the picture.
+2. The cap is maroon.
+3. People wear a cap in summer and winter.
+4. The cap covers the head.
+5. Yes, the cap is adjustable.
+6. Yes, the cap is comfortable to wear."
+Clothes,coat,,This is a brown coat with a hood and toggle buttons. It is warm and suitable for winter.,"1. What can you see in the picture?
+2. What color is the coat?
+3. When do people wear the coat, in summer or winter?
+4. What part of the body does the coat cover?
+5. Does the coat have a hood, yes or no?
+6. What are the buttons on the coat called, toggle or zipper?
+7. Is the coat warm or cold?","1. I can see a coat in the picture.
+2. The coat is brown.
+3. People wear the coat in winter.
+4. The coat covers the body.
+5. Yes, the coat has a hood.
+6. The buttons are called toggle.
+7. The coat is warm."
+Clothes,gloves,,These black leather gloves have a button to keep them snug and warm for winter wear.,"1. What can you see in the picture?
+2. What color are the gloves?
+3. When do people wear gloves, in summer or winter?
+4. What part of the body do gloves cover?
+5. What do gloves have to keep them snug?
+6. Are the gloves made of leather or paper?
+7. Do gloves keep your hands warm or cold?","1. I can see gloves in the picture.
+2. The gloves are black.
+3. People wear gloves in winter.
+4. Gloves cover the hands.
+5. Gloves have a button.
+6. The gloves are made of leather.
+7. Gloves keep your hands warm."
+Clothes,handbag,,This is a brown leather handbag with two handles. It is made of leather and can be used in any season.,"1. What can you see in the picture?
+2. What color is the handbag?
+3. How many handles does the handbag have?
+4. What is the handbag made of, leather or paper?
+5. When can you use the handbag, in summer or in winter?
+6. What part of the body does the handbag cover?
+7. Is the handbag big or small?","1. I can see a handbag in the picture.
+2. The handbag is brown.
+3. The handbag has two handles.
+4. The handbag is made of leather.
+5. You can use the handbag in any season.
+6. The handbag covers the hand.
+7. The handbag is big."
+Clothes,hat,,This is a blue woven hat with a black ribbon. It is perfect for summer.,"1. What can you see in the picture?
+2. What color is the hat?
+3. What is on the hat?
+4. When do people wear this hat, in summer or winter?
+5. What part of the body does the hat cover?
+6. Is the hat for boys, girls, or both?
+7. Can you wear the hat when it is sunny?","1. I can see a hat in the picture.
+2. The hat is blue.
+3. There is a black ribbon on the hat.
+4. People wear this hat in summer.
+5. The hat covers the head.
+6. The hat is for both boys and girls.
+7. Yes, you can wear the hat when it is sunny."
+Clothes,jacket,,This is a brown leather jacket. It has two pockets on the front. It is good for autumn and winter.,"1. What can you see in the picture?
+2. What color is the jacket?
+3. How many pockets does the jacket have?
+4. When do people wear the jacket, in summer or winter?
+5. What part of the body does the jacket cover?
+6. Is the jacket good for autumn or spring?
+7. What is the jacket made of, leather or cotton?","1. I can see a jacket in the picture.
+2. The jacket is brown.
+3. The jacket has two pockets.
+4. People wear the jacket in winter.
+5. The jacket covers the body.
+6. The jacket is good for autumn.
+7. The jacket is made of leather."
+Clothes,jeans,,These blue jeans are skinny and have a dark wash. They are perfect for any season.,"1. What can you see in the picture?
+2. What color are the jeans?
+3. When do people wear jeans, in summer or winter?
+4. What part of the body do jeans cover?
+5. Are the jeans skinny or loose?
+6. Do people wear jeans to play or to sleep?
+7. What season is good for wearing jeans, spring or autumn?","1. I can see jeans in the picture.
+2. The jeans are blue.
+3. People wear jeans in summer and winter.
+4. Jeans cover the legs.
+5. The jeans are skinny.
+6. People wear jeans to play.
+7. Spring and autumn are good for wearing jeans."
+Clothes,ring,,This is a beautiful rose gold ring with shiny diamonds. It looks very pretty and can be worn anytime.,"1. What can you see in the picture?
+2. What color is the ring?
+3. What is on the ring?
+4. When do people wear the ring, in the day or at night?
+5. What part of the body does the ring cover?
+6. Is the ring pretty or plain?
+7. Can you wear the ring on your hand or your foot?","1. I can see a ring in the picture.
+2. The ring is rose gold.
+3. There are shiny diamonds on the ring.
+4. People wear the ring anytime.
+5. The ring covers the finger.
+6. The ring is pretty.
+7. You can wear the ring on your hand."
+Clothes,sandals,,"These sandals are brown with pretty beads in blue, orange, and gold colors. They are flat and perfect for summer.","1. What can you see in the picture?
+2. What color are the sandals?
+3. What colors are the beads on the sandals?
+4. When do people wear sandals, in summer or winter?
+5. What part of the body do sandals cover?
+6. Are the sandals flat or high?
+7. Are the sandals good for summer or winter?","1. I can see sandals in the picture.
+2. The sandals are brown.
+3. The beads are blue, orange, and gold.
+4. People wear sandals in summer.
+5. Sandals cover the feet.
+6. The sandals are flat.
+7. The sandals are good for summer."
+Clothes,scarf,,This is a blue scarf with a pretty lace pattern. It is lightweight and perfect for spring and summer.,"1. What can you see in the picture?
+2. What color is the scarf?
+3. When do people wear the scarf, in summer or winter?
+4. What part of the body does the scarf cover?
+5. Is the scarf heavy or light?
+6. What is on the scarf, lace or buttons?
+7. Is the scarf for boys or girls?","1. I can see a scarf in the picture.
+2. The scarf is blue.
+3. People wear the scarf in summer.
+4. The scarf covers the neck.
+5. The scarf is light.
+6. There is lace on the scarf.
+7. The scarf is for boys and girls."
+Clothes,shoes,,These white shoes have a mesh upper for breathability and a rubber sole for comfort and durability. They are perfect for casual wear and light activities.,"1. What can you see in the picture?
+2. What color are the shoes?
+3. When do people wear shoes?
+4. What part of the body do shoes cover?
+5. Are the shoes for running or for sleeping?
+6. What is on the bottom of the shoes, rubber or paper?
+7. Do you wear shoes on your hands or on your feet?","1. I can see shoes in the picture.
+2. The shoes are white.
+3. People wear shoes every day.
+4. Shoes cover the feet.
+5. The shoes are for running.
+6. Rubber is on the bottom of the shoes.
+7. I wear shoes on my feet."
+Clothes,shorts,,These black shorts with white stripes on the sides are perfect for summer. They have an elastic waistband for comfort.,"1. What can you see in the picture?
+2. What color are the shorts?
+3. What is on the sides of the shorts?
+4. When do people wear shorts, in summer or winter?
+5. What part of the body do shorts cover?
+6. What is the waistband made of, elastic or metal?
+7. Are the shorts comfortable, yes or no?","1. I can see shorts in the picture.
+2. The shorts are black.
+3. White stripes are on the sides.
+4. People wear shorts in summer.
+5. Shorts cover the legs.
+6. The waistband is made of elastic.
+7. Yes, the shorts are comfortable."
+Clothes,skirt,,"This is a pink skirt. It is short and flared, perfect for spring or summer.","1. What can you see in the picture?
+2. What color is the skirt?
+3. Is the skirt long or short?
+4. When do people wear a skirt, in spring or in winter?
+5. What part of the body does the skirt cover?
+6. Is the skirt flared or straight?
+7. Is the skirt for boys or girls?","1. I can see a skirt in the picture.
+2. The skirt is pink.
+3. The skirt is short.
+4. People wear a skirt in spring.
+5. The skirt covers the legs.
+6. The skirt is flared.
+7. The skirt is for girls."
+Clothes,slippers,,These white slippers are fluffy and comfortable for wearing at home in any season.,"1. What can you see in the picture?
+2. What color are the slippers?
+3. When do people wear slippers, at home or at school?
+4. What part of the body do slippers cover, feet or hands?
+5. Are the slippers fluffy or smooth?
+6. Can you wear slippers in summer or only in winter?
+7. Do slippers make your feet feel comfortable or hot?","1. I can see slippers in the picture.
+2. The slippers are white.
+3. People wear slippers at home.
+4. Slippers cover feet.
+5. The slippers are fluffy.
+6. You can wear slippers in summer.
+7. Slippers make your feet feel comfortable."
+Clothes,socks,,"These socks are bright and colorful with different patterns. They have red, blue, yellow, white, and pink colors. They are fun to wear and can be worn in any season.","1. What can you see in the picture?
+2. What color are the socks?
+3. How many colors are on the socks?
+4. When do people wear socks, in summer or winter?
+5. What part of the body do socks cover?
+6. Are the socks bright or dark?
+7. Do socks have patterns, yes or no?","1. I can see socks in the picture.
+2. The socks are red, blue, yellow, white, and pink.
+3. There are five colors on the socks.
+4. People wear socks in summer and winter.
+5. Socks cover the feet.
+6. The socks are bright.
+7. Yes, socks have patterns."
+Clothes,sweater,,This is a blue sweater with a cable knit pattern. It has long sleeves and is perfect for keeping warm in winter.,"1. What can you see in the picture?
+2. What color is the sweater?
+3. When do people wear a sweater, in summer or winter?
+4. What part of the body does the sweater cover, the arms or the legs?
+5. Does the sweater have long sleeves or short sleeves?
+6. Is the sweater for keeping warm or for keeping cool?
+7. What is the sweater made for, winter or summer?","1. I can see a sweater in the picture.
+2. The sweater is blue.
+3. People wear a sweater in winter.
+4. The sweater covers the arms.
+5. The sweater has long sleeves.
+6. The sweater is for keeping warm.
+7. The sweater is made for winter."
+Clothes,swimsuit,,This is a red swimsuit for summer. It is sleeveless and has one piece. The swimsuit has blue and black stripes on the side.,"1. What can you see in the picture?
+2. What color is the swimsuit?
+3. When do people wear a swimsuit, in summer or winter?
+4. What part of the body does the swimsuit cover, the arms or the body?
+5. Does the swimsuit have sleeves, yes or no?
+6. What colors are the stripes on the swimsuit, blue and black or red and yellow?
+7. Is the swimsuit for swimming or for sleeping?","1. I can see a swimsuit in the picture.
+2. The swimsuit is red.
+3. People wear a swimsuit in summer.
+4. The swimsuit covers the body.
+5. No, the swimsuit does not have sleeves.
+6. The stripes are blue and black.
+7. The swimsuit is for swimming."
+Clothes,tie,,"This is a striped tie with red, navy blue, and yellow stripes. It is worn with a white shirt and is suitable for formal occasions.","1. What can you see in the picture?
+2. What color is the tie?
+3. How many colors does the tie have?
+4. When do people wear a tie, for play or for formal occasions?
+5. What part of the body does the tie cover?
+6. What do people wear with a tie, a white shirt or a T-shirt?
+7. Is the tie for boys, girls, or both?","1. I can see a tie in the picture.
+2. The tie is red, navy blue, and yellow.
+3. The tie has three colors.
+4. People wear a tie for formal occasions.
+5. The tie covers the neck.
+6. People wear a white shirt with a tie.
+7. The tie is for both boys and girls."
+Clothes,trousers,,These light blue trousers have a button and cuffed bottoms. They are good for spring and autumn.,"1. What can you see in the picture?
+2. What color are the trousers?
+3. When do people wear these trousers, in spring or winter?
+4. What part of the body do the trousers cover?
+5. Do the trousers have a button, yes or no?
+6. Are the bottoms of the trousers cuffed, yes or no?
+7. Are these trousers good for summer, yes or no?","1. I can see trousers in the picture.
+2. The trousers are light blue.
+3. People wear these trousers in spring.
+4. The trousers cover the legs.
+5. Yes, the trousers have a button.
+6. Yes, the bottoms are cuffed.
+7. No, these trousers are good for spring and autumn."
+Clothes,T-shirt,,This is a green T-shirt. It has short sleeves and a round neck. It's great for summer!,"1. What can you see in the picture?
+2. What color is the T-shirt?
+3. When do people wear a T-shirt, in summer or winter?
+4. What part of the body does the T-shirt cover, the arms or the legs?
+5. Does the T-shirt have long sleeves or short sleeves?
+6. Is the neck of the T-shirt round or square?
+7. Is the T-shirt good for hot weather or cold weather?","1. I can see a T-shirt in the picture.
+2. The T-shirt is green.
+3. People wear a T-shirt in summer.
+4. The T-shirt covers the arms.
+5. The T-shirt has short sleeves.
+6. The neck of the T-shirt is round.
+7. The T-shirt is good for hot weather."
