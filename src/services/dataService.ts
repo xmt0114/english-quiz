@@ -59,11 +59,16 @@ export async function loadJsonData(): Promise<ParsedQuizData[]> {
         number: q.number // 保留问题编号
       }))
 
-      // 处理图片路径 - 使用localImagePath
-      let imagePath = item.localImagePath || '';
-      
-      // 如果没有完整路径但有类别和主题词，则构建路径
-      if ((!imagePath || !imagePath.startsWith('/')) && item.category && item.themeWord) {
+      // 优先使用displayUrl字段，其次使用url字段，最后使用本地路径
+      let imagePath = '';
+      if (item.displayUrl) {
+        imagePath = item.displayUrl;
+      } else if (item.url) {
+        imagePath = item.url;
+      } else if (item.localImagePath) {
+        imagePath = item.localImagePath;
+      } else if (item.category && item.themeWord) {
+        // 如果没有网络URL，则构建本地路径
         imagePath = `${BASE_PATH}${item.category}/${item.themeWord}.jpg`;
       }
       
@@ -88,20 +93,28 @@ export async function loadJsonData(): Promise<ParsedQuizData[]> {
   }
 }
 
-// 修改loadCategoryData函数，使其调用loadJsonData并过滤特定类别
-export async function loadCategoryData(categoryId: string): Promise<ParsedQuizData[]> {
+// 修改 loadCategoryData 函数，添加更好的错误处理
+export const loadCategoryData = async (categoryId: string): Promise<ParsedQuizData[]> => {
   try {
-    // 加载所有JSON数据
+    console.log(`Fetching data for category: ${categoryId}`)
+    
+    // 确保 categoryId 有效
+    if (!categoryId) {
+      console.error('Invalid categoryId provided')
+      return []
+    }
+    
+    // 加载所有数据
     const allData = await loadJsonData()
     
-    // 过滤出指定类别的数据
-    const filteredData = allData.filter(item => item.category === categoryId)
+    // 筛选出特定类别的数据
+    const categoryData = allData.filter(item => item.category === categoryId)
     
-    console.log(`Filtered ${filteredData.length} items for category: ${categoryId}`)
+    console.log(`Found ${categoryData.length} items for category ${categoryId}`)
     
-    return filteredData
+    return categoryData
   } catch (error) {
-    console.error(`Error loading data for ${categoryId}:`, error)
+    console.error('Error loading category data:', error)
     return []
   }
 }
@@ -170,6 +183,11 @@ export function scoreAnswer(userAnswer: string, correctAnswer: string): number {
   // 返回0-1之间的得分
   return Math.min(Math.max(keywordScore, 0), 1)
 }
+
+
+
+
+
 
 
 
