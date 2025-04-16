@@ -110,7 +110,7 @@
 import { ref, computed, onMounted, onBeforeUnmount, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useQuizStore } from '../stores/quiz'
-import { loadCsvData, selectRandomQuestions, scoreAnswer } from '../services/dataService'
+import { loadCategoryData, selectRandomQuestions, scoreAnswer } from '../services/dataService'
 import { speechSynthesis, speechRecognition } from '../services/speechService'
 import type { ParsedQuizData, Question } from '../types/quiz'
 
@@ -239,7 +239,7 @@ const loadQuizData = async () => {
 
     // 加载该类别的数据
     console.log(`Loading data for category: ${categoryId}`)
-    const data = await loadCsvData(categoryId)
+    const data = await loadCategoryData(categoryId)
     console.log(`Loaded ${data.length} items for category ${categoryId}`)
     parsedData.value = data
 
@@ -976,3 +976,4 @@ onBeforeUnmount(() => {
   background-color: #d32f2f;
 }
 </style>
+

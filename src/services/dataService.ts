@@ -3,7 +3,7 @@ import type { Category, Question, QuizData, ParsedQuizData } from '../types/quiz
 // 基础路径
 // 使用相对路径而不是环境变量
 const BASE_PATH = '/data/images/'
-const CSV_PATH = '/data/csv/'
+const JSON_PATH = '/data/json/'
 
 // 所有类别
 export const categories: Category[] = [
@@ -24,275 +24,90 @@ export const categories: Category[] = [
   { id: 'Transportation', name: '交通工具', folderPath: `${BASE_PATH}Transportation/` }
 ]
 
-// 加载CSV数据
-export async function loadCsvData(categoryId: string): Promise<ParsedQuizData[]> {
+// 添加缓存
+let cachedJsonData: ParsedQuizData[] | null = null
+
+// 加载JSON数据
+export async function loadJsonData(): Promise<ParsedQuizData[]> {
+  // 如果已有缓存数据，直接返回
+  if (cachedJsonData) {
+    console.log('Using cached JSON data')
+    return cachedJsonData
+  }
+
   try {
-    // 尝试加载新的英文列名CSV文件，如果失败则回退到原始文件
-    let url = `${CSV_PATH}${categoryId}_qa_fixed.csv`
-    console.log(`Trying to fetch fixed CSV data from: ${url}`)
+    const url = `${JSON_PATH}all_quiz_data.json`
+    console.log(`Fetching JSON data from: ${url}`)
 
-    let response = await fetch(url)
+    const response = await fetch(url)
 
-    // 如果新文件不存在，则使用原始文件
     if (!response.ok) {
-      url = `${CSV_PATH}${categoryId}_qa.csv`
-      console.log(`Fixed CSV not found, fetching original CSV data from: ${url}`)
-      response = await fetch(url)
-    } else {
-      console.log(`Successfully loaded fixed CSV file`)
+      throw new Error(`Failed to fetch JSON: ${response.status} ${response.statusText}`)
     }
 
-    // 检查最终的响应是否成功
-    if (!response.ok) {
-      throw new Error(`Failed to fetch CSV: ${response.status} ${response.statusText}`)
-    }
+    const jsonData = await response.json()
+    console.log(`JSON data loaded, ${jsonData.length} items found`)
 
-    const csvText = await response.text()
-    console.log(`CSV data loaded, length: ${csvText.length} bytes`)
+    // 将JSON数据转换为ParsedQuizData格式
+    const processedData: ParsedQuizData[] = jsonData.map((item: any) => {
+      // 转换questions格式以匹配ParsedQuizData
+      const questions: Question[] = item.questions.map((q: any) => ({
+        question: q.question,
+        answer: q.answer,
+        category: item.category,
+        themeWord: item.themeWord,
+        number: q.number // 保留问题编号
+      }))
 
-    if (csvText.length === 0) {
-      throw new Error('CSV file is empty')
-    }
+      // 处理图片路径 - 使用localImagePath
+      let imagePath = item.localImagePath || '';
+      
+      // 如果没有完整路径但有类别和主题词，则构建路径
+      if ((!imagePath || !imagePath.startsWith('/')) && item.category && item.themeWord) {
+        imagePath = `${BASE_PATH}${item.category}/${item.themeWord}.jpg`;
+      }
+      
+      console.log(`Image path for ${item.themeWord}: ${imagePath}`);
 
-    // 输出前100个字符作为调试信息
-    console.log(`CSV preview: ${csvText.substring(0, 100)}...`)
+      return {
+        category: item.category,
+        themeWord: item.themeWord,
+        imagePath: imagePath,
+        description: item.description || '',
+        questions
+      }
+    })
 
-    const parsedData = parseCSV(csvText)
-    console.log(`Parsed ${parsedData.length} rows from CSV`)
-
-    const processedData = processQuizData(parsedData)
-    console.log(`Processed ${processedData.length} quiz items`)
-
+    // 保存到缓存
+    cachedJsonData = processedData
+    
     return processedData
   } catch (error) {
-    console.error(`Error loading CSV data for ${categoryId}:`, error)
+    console.error('Error loading JSON data:', error)
     return []
   }
 }
 
-// 解析CSV文本
-function parseCSV(csvText: string): QuizData[] {
-  console.log(`Parsing CSV text of length: ${csvText.length}`)
-
-  // 定义必要的列名映射
-  const requiredHeadersMap = {
-    '类别': ['类别', 'Category'],
-    '提取名字': ['提取名字', 'ThemeWord'],
-    '图片路径': ['图片路径', 'ImagePath'],
-    '问题': ['问题', 'Question'],
-    '答案': ['答案', 'Answer'],
-    '信息提取2': ['信息提取2', '信息提取_2', 'Description']
-  }
-
+// 修改loadCategoryData函数，使其调用loadJsonData并过滤特定类别
+export async function loadCategoryData(categoryId: string): Promise<ParsedQuizData[]> {
   try {
-    // 分析CSV文本
-    const result: QuizData[] = []
-    let currentRow: string[] = []
-    let currentField = ''
-    let inQuotes = false
-    let rowCount = 0
-    let headers: string[] = []
-
-    // 创建列名映射表
-    const headerMap: Record<string, string> = {}
-
-    // 逐字符处理CSV文本
-    for (let i = 0; i < csvText.length; i++) {
-      const char = csvText[i]
-      const nextChar = i < csvText.length - 1 ? csvText[i + 1] : ''
-
-      // 处理引号
-      if (char === '"') {
-        // 如果下一个字符也是引号，表示转义引号
-        if (nextChar === '"') {
-          currentField += '"'
-          i++ // 跳过下一个引号
-        } else {
-          inQuotes = !inQuotes
-        }
-      }
-      // 处理逗号（如果不在引号内）
-      else if (char === ',' && !inQuotes) {
-        currentRow.push(currentField)
-        currentField = ''
-      }
-      // 处理换行符（如果不在引号内）
-      else if ((char === '\n' || (char === '\r' && nextChar === '\n')) && !inQuotes) {
-        // 如果是\r\n，跳过\n
-        if (char === '\r' && nextChar === '\n') {
-          i++
-        }
-
-        // 添加最后一个字段
-        currentRow.push(currentField)
-        currentField = ''
-
-        // 处理行
-        if (rowCount === 0) {
-          // 第一行是标题
-          headers = currentRow.map(h => h.trim())
-
-          // 创建列名映射表
-          for (const [field, possibleHeaders] of Object.entries(requiredHeadersMap)) {
-            for (const header of possibleHeaders) {
-              if (headers.includes(header)) {
-                headerMap[header] = field
-                break
-              }
-            }
-          }
-
-          // 检查必要字段
-          const missingFields = []
-          for (const [field, possibleHeaders] of Object.entries(requiredHeadersMap)) {
-            if (!possibleHeaders.some(h => headers.includes(h))) {
-              missingFields.push(field)
-            }
-          }
-
-          if (missingFields.length > 0) {
-            console.error(`CSV is missing required fields: ${missingFields.join(', ')}`)
-            console.log('Available headers:', headers)
-          }
-        } else {
-          // 处理数据行
-          if (currentRow.length === headers.length) {
-            const entry: Record<string, string> = {}
-
-            headers.forEach((header, index) => {
-              // 如果是英文列名，使用映射表将其映射到中文列名
-              const mappedHeader = headerMap[header] || header
-              entry[mappedHeader] = currentRow[index] || ''
-
-              // 同时保存原始列名的值
-              entry[header] = currentRow[index] || ''
-            })
-
-            result.push(entry as QuizData)
-          } else {
-            console.warn(`Row ${rowCount} has ${currentRow.length} fields, expected ${headers.length}`)
-          }
-        }
-
-        // 重置行
-        currentRow = []
-        rowCount++
-      }
-      // 其他字符
-      else {
-        currentField += char
-      }
-    }
-
-    // 处理最后一行（如果文件不以换行符结尾）
-    if (currentField !== '' || currentRow.length > 0) {
-      currentRow.push(currentField)
-
-      if (rowCount > 0 && currentRow.length === headers.length) {
-        const entry: Record<string, string> = {}
-
-        headers.forEach((header, index) => {
-          const mappedHeader = headerMap[header] || header
-          entry[mappedHeader] = currentRow[index] || ''
-          entry[header] = currentRow[index] || ''
-        })
-
-        result.push(entry as QuizData)
-      }
-    }
-
-    console.log(`Parsed ${result.length} rows from CSV`)
-    return result
+    // 加载所有JSON数据
+    const allData = await loadJsonData()
+    
+    // 过滤出指定类别的数据
+    const filteredData = allData.filter(item => item.category === categoryId)
+    
+    console.log(`Filtered ${filteredData.length} items for category: ${categoryId}`)
+    
+    return filteredData
   } catch (error) {
-    console.error('Error parsing CSV:', error)
+    console.error(`Error loading data for ${categoryId}:`, error)
     return []
   }
 }
 
-// 处理问题和答案
-function processQuizData(data: QuizData[]): ParsedQuizData[] {
-  return data.map(item => {
-    console.log('Processing item:', item)
-
-    // 解析问题和答案
-    // 处理不同的换行符
-    // 支持英文列名
-    const questionText = item.问题 || item.Question || ''
-    const answerText = item.答案 || item.Answer || ''
-
-    const questionLines = questionText.split(/\\n|\n/) || []
-    const answerLines = answerText.split(/\\n|\n/) || []
-
-    const questions: Question[] = []
-
-    for (let i = 0; i < questionLines.length; i++) {
-      const questionLine = questionLines[i].trim()
-      const answerLine = answerLines[i]?.trim() || ''
-
-      if (questionLine && answerLine) {
-        // 提取问题和答案文本（去掉序号）
-        const questionMatch = questionLine.match(/^\d+\.\s*(.+)$/)
-        const answerMatch = answerLine.match(/^\d+\.\s*(.+)$/)
-
-        if (questionMatch && answerMatch) {
-          questions.push({
-            question: questionMatch[1],
-            answer: answerMatch[1],
-            category: item.类别 || item.Category || '',
-            themeWord: item.提取名字 || item.ThemeWord || ''
-          })
-        }
-      }
-    }
-
-    // 处理图片路径
-    // 支持英文列名
-    let imagePath = item.图片路径 || item.ImagePath || ''
-
-    // 处理类别名称，确保与文件夹名称匹配
-    const categoryFolder = item.类别 || item.Category || ''
-
-    // 处理主题词，确保与文件名匹配
-    const themeWord = item.提取名字 || item.ThemeWord || ''
-
-    console.log(`ThemeWord from CSV: ${themeWord}, Category: ${categoryFolder}`)
-
-    // 如果没有图片路径，则根据类别和主题词构建
-    if (categoryFolder && themeWord) {
-      // 构建图片路径
-      imagePath = `${categoryFolder}/${themeWord}.jpg`
-      console.log(`Constructed image path: ${imagePath}`)
-    }
-
-    // 检查图片路径是否有效
-    if (!categoryFolder || !themeWord) {
-      console.error(`Invalid image path components: category=${categoryFolder}, themeWord=${themeWord}`)
-    }
-
-    return {
-      category: item.类别 || item.Category || '',
-      themeWord: item.提取名字 || item.ThemeWord || '',
-      imagePath: imagePath,
-      description: item.信息提取2 || item.信息提取_2 || item.Description || '',
-      questions
-    }
-  })
-}
-
-// 获取图片URL
-export function getImageUrl(category: string, themeWord: string): string {
-  console.log(`Getting image URL for category: ${category}, themeWord: ${themeWord}`)
-
-  // 处理文件名中可能有的空格
-  const themeWordTrimmed = themeWord.trim()
-
-  // 默认使用 .jpg 扩展名
-  const url = `${BASE_PATH}${category}/${themeWordTrimmed}.jpg`
-  console.log(`Constructed image URL: ${url}`)
-  return url
-}
-
-// 随机选择问题
+// 删除不再需要的CSV相关函数
+// 保留随机选择问题的函数
 export function selectRandomQuestions(
   parsedData: ParsedQuizData[],
   count: number = 3
@@ -355,3 +170,8 @@ export function scoreAnswer(userAnswer: string, correctAnswer: string): number {
   // 返回0-1之间的得分
   return Math.min(Math.max(keywordScore, 0), 1)
 }
+
+
+
+
+
