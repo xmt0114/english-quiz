@@ -9,7 +9,7 @@
     </main>
     
     <footer class="app-footer">
-      <p>&copy; 2025 英语问答游戏 - MVP版本</p>
+      <p>&copy; 2025 英语问答游戏</p>
     </footer>
   </div>
 </template>

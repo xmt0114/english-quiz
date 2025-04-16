@@ -1,7 +1,7 @@
 <template>
   <div class="welcome-container">
-    <h1>英语问答游戏</h1>
     <p>欢迎来到英语问答游戏！选择你想要练习的类别和模式，然后开始答题吧！</p>
+    <p>(请在PC浏览器中选择Edge浏览器，效果更佳)</p>
     
     <div class="categories-section">
       <h2>选择类别</h2>
