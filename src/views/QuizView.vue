@@ -168,7 +168,7 @@ const currentImageUrl = computed(() => {
   const imagePath = quizStore.currentImagePath
   console.log('Raw image path:', imagePath)
 
-  // 如果路径已经是完整URL，直接返回
+  // 如果路径已经是完整URL（包括imgbb的URL），直接返回
   if (imagePath.startsWith('http')) {
     return imagePath
   }
@@ -482,8 +482,13 @@ const nextQuestion = async () => {
   const previousImagePath = quizStore.currentImagePath
   const previousQuestionIndex = quizStore.currentQuestionIndex
 
+  // 检查是否已经是最后一题
+  const isLastQuestion = quizStore.currentQuestionIndex === quizStore.currentQuestions.length - 1
+  console.log(`Current question index: ${quizStore.currentQuestionIndex}, Total questions: ${quizStore.currentQuestions.length}, Is last: ${isLastQuestion}`)
+
   // 进入下一题
   const hasNext = quizStore.nextQuestion()
+  console.log(`Has next question: ${hasNext}`)
 
   if (hasNext) {
     // 如果有下一题
@@ -559,6 +564,8 @@ const nextQuestion = async () => {
     }
   } else {
     // 如果没有下一题，进入结果页面
+    console.log('No more questions, navigating to results page')
+    await new Promise(resolve => setTimeout(resolve, 500)) // 短暂延迟确保状态更新
     router.push('/results')
   }
 }
